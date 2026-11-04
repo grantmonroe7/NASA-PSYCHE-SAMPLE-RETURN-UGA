@@ -1,0 +1,41 @@
+# Default parameters mirrored from drill_penetration_drive/scripts/00_parameters.m
+# Keep in sync when numbers change.
+
+motor:
+  tau_m_nom: 0.18          # N·m
+  omega_m_nom_rpm: 5000
+
+gearbox:
+  n_g: 113
+  eta_g: 0.80
+
+winch:
+  r_w: 0.030               # m
+
+pulley:
+  n_p: 2
+  eta_p: 0.92
+
+plant:
+  m_carriage: 3.5          # kg
+  b_viscous: 25.0          # N·s/m
+  F_load_nom: 30.0         # N
+
+modes:
+  LVHT:
+    tau_m: 0.16
+    omega_m_rpm: 800
+    duration_s: 30
+  PERC:
+    tau_m_base: 0.08
+    tau_m_pulse: 0.18
+    pulse_freq_hz: 15
+    duration_s: 20
+  HSPD:
+    tau_m: 0.06
+    omega_m_rpm: 3500
+    duration_s: 15
+
+environment:
+  gravity: [0.0, 0.0, -1.62]   # lunar example; set near-zero for asteroid
+  regolith_friction: 0.6

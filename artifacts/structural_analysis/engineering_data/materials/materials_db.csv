@@ -1,0 +1,9 @@
+Material_ID,Name,Density_kg_m3,E_GPa,nu,Sy_MPa,Sut_MPa,k_W_mK,Cp_J_kgK,CTE_1e-6_K,Notes
+MAT-TI64,Ti-6Al-4V,4430,114,0.34,880,950,6.7,526,8.6,Primary structural & motor housings
+MAT-AL7075,Al 7075-T6,2810,71.7,0.33,503,572,130,960,23.6,Carriage; low-mass brackets
+MAT-STEEL,Stainless / Alloy Steel,7800,200,0.29,450,650,15,500,12,Guides; gearbox internals
+MAT-SS316,SS 316,8000,193,0.27,205,515,16.3,500,16,Cables; pulley hardware
+MAT-CFRP,CFRP (quasi-iso),1550,70,0.30,600,700,5,1000,0.5,Main frame / truss
+MAT-CU,Copper / Cu alloys,8960,110,0.34,70,220,400,385,17,Slip ring; harness
+MAT-PCB,PCB + components,1800,20,0.30,N/A,N/A,0.3,1000,15,Boards (effective)
+MAT-PT100,Platinum RTD,21450,168,0.39,N/A,N/A,71.6,133,9,Sensors

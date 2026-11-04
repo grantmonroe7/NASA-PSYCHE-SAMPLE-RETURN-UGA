@@ -1,0 +1,21 @@
+Part_ID,Part_Name,Subsystem,Qty,Material_ID,Mass_each_kg,Total_Mass_kg,Notes
+P-001,Penetration Motor (EC-60 class),Penetration,1,MAT-TI64,0.45,0.45,Maxon-class BLDC + encoder
+P-002,Planetary Gearbox GP-52C,Penetration,1,MAT-STEEL,0.38,0.38,Ratio ~113:1
+P-003,Cable Reel / Winch Drum,Penetration,1,MAT-AL7075,0.22,0.22,Dual-groove antagonistic
+P-004,Steel Cable (pair),Penetration,1,MAT-SS316,0.15,0.15,~4 m total length
+P-005,Fixed Pulleys,Penetration,2,MAT-SS316,0.04,0.08,Ball-bearing
+P-006,Movable Pulleys,Penetration,2,MAT-SS316,0.04,0.08,On carriage
+P-007,Linear Guides (pair),Penetration,1,MAT-STEEL,0.35,0.35,MGN12-class or equivalent
+P-008,Moving Platform / Carriage,Penetration,1,MAT-AL7075,0.65,0.65,Carries rotation + clamp
+P-009,Top Clamping Unit,Clamping,1,MAT-TI64,0.55,0.55,3-jaw style
+P-010,Bottom Clamping Unit,Clamping,1,MAT-TI64,0.50,0.50,3-jaw style
+P-011,Rotation Motor,Rotation,1,MAT-TI64,0.40,0.40,With slip-ring interface
+P-012,Slip Ring Assembly,Rotation,1,MAT-CU,0.12,0.12,Power + signal
+P-013,Main Frame / Truss,Structure,1,MAT-CFRP,2.80,2.80,Primary load path
+P-014,Drill Pipe Segment (example),Drill String,1,MAT-TI64,0.90,0.90,Per segment; multi-string
+P-015,Core Pipe / Catcher,Coring,1,MAT-AL7075,0.35,0.35,Wireline compatible
+P-016,Arduino / Controller Board,Avionics,1,MAT-PCB,0.08,0.08,Low-level driver
+P-017,Motor Drivers (pair),Avionics,2,MAT-PCB,0.06,0.12,Elmo / ESCON class
+P-018,Harness & Connectors,Avionics,1,MAT-CU,0.25,0.25,Shielded
+P-019,Thermal Sensors / RTDs,Sensors,3,MAT-PT100,0.01,0.03,Motor + bit + ambient
+P-020,Anchoring / Footpads,Structure,3,MAT-AL7075,0.40,1.20,Low-g reaction

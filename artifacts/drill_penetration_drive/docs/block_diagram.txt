@@ -1,0 +1,50 @@
+==============================================================
+  PENETRATION DRIVE – SIMULINK-STYLE BLOCK DIAGRAM
+  (Cable + Movable-Pulley Torque Amplification)
+==============================================================
+
+  +----------------+
+  |  tau_m_cmd     |   (Constant or Arduino serial command)
+  |  [N·m]         |
+  +--------+-------+
+           |
+           v
+  +----------------+     n_g * η_g
+  |   GEARBOX      |------------------+
+  |  (Maxon GP-52C)|                  |
+  |  ratio = 113   |                  |
+  +--------+-------+                  |
+           |                          |
+           v                          v
+  +----------------+           +--------------+
+  |  CABLE REEL    |  1/r_w    |  K_force     |  (verification)
+  |  r_w = 30 mm   |---------->|  (algebraic) |
+  +--------+-------+           +--------------+
+           |
+           v
+  +----------------+     n_p * η_p
+  | MOVABLE PULLEY |------------------+
+  |  MA = 2        |                  |
+  | (force amp)    |                  |
+  +--------+-------+                  |
+           |                          |
+           v                          v
+  +----------------+           +--------------+
+  |  F_drill       |           |  Linear      |
+  |  [N]           |---------->|  Plant       |
+  +----------------+           |  1/(m s + b) |
+                               +------+-------+
+                                      |
+                                      v
+                               +--------------+
+                               |  Position x  |
+                               |  Velocity v  |
+                               +--------------+
+
+  Antagonistic second cable (not shown) provides reverse motion
+  when reel direction is reversed.
+
+  Arduino path:
+  Serial "T <0..1>" → PWM → motor driver → physical motor
+  Encoder → position estimate → Serial "X <m>" telemetry
+==============================================================

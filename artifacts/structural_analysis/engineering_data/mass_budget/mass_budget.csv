@@ -1,0 +1,10 @@
+Subsystem,Allocated_Mass_kg,Current_Estimate_kg,Margin_kg,Margin_pct,Notes
+Penetration Drive,2.50,2.36,0.14,5.6,Motor+gearbox+reel+pulleys+guides+carriage
+Clamping,1.20,1.05,0.15,12.5,Top + bottom units
+Rotation,0.60,0.52,0.08,13.3,Motor + slip ring
+Structure / Frame,4.50,4.00,0.50,11.1,CFRP truss + footpads
+Drill String (1 segment),1.00,0.90,0.10,10.0,Example; scales with depth
+Coring / Wireline,0.50,0.35,0.15,30.0,Core pipe + catcher
+Avionics & Harness,0.60,0.45,0.15,25.0,Controller + drivers + harness
+Sensors,0.10,0.03,0.07,70.0,RTDs etc.
+TOTAL,11.00,9.66,1.34,12.2,Current best estimate with ~12% system margin

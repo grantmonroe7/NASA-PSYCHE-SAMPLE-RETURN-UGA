@@ -1,0 +1,9 @@
+Load_Case_ID,Description,Type,Fx_N,Fy_N,Fz_N,Mx_Nm,My_Nm,Mz_Nm,Notes
+LC-OPS-001,Nominal drilling (LVHT),Operational,0,0,-80,0,0,15,Axial force + torque reaction
+LC-OPS-002,Percussive peak,Operational,0,0,-120,0,0,20,Short-duration pulse
+LC-OPS-003,Extraction / retract,Operational,0,0,40,0,0,-8,Reverse
+LC-LG-001,Low-g static (0.15 m/s2),Operational,0,0,-1.5,0,0,0,Self-weight only
+LC-LAUNCH-001,Quasi-static launch,Launch,0,0,50,0,0,0,5 g axial example (scale to vehicle)
+LC-VIB-001,Random vibration (GEVS-like),Vibration,N/A,N/A,N/A,N/A,N/A,N/A,See PSD in vib_psd.csv
+LC-THERM-001,Thermal gradient (ΔT=80 K),Thermal,N/A,N/A,N/A,N/A,N/A,N/A,CTE-induced stress
+LC-EM-001,EMI / magnetic cleanliness,EM,N/A,N/A,N/A,N/A,N/A,N/A,Motor + metal surface
